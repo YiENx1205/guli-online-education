@@ -1,0 +1,51 @@
+## 服务端口
+#server:
+#  port: 8006
+#
+#feign:
+#  client:
+#    config:
+#      default:
+#        connect-timeout: 10000
+#        read-timeout: 10000
+#  hystrix:
+#    enabled: true
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 6000
+#
+#spring:
+#  application:
+#    name: service-msm
+#  profiles:
+#    active: dev
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#  redis:
+#    host: localhost
+#    lettuce:
+#      pool:
+#        max-wait: 10000ms
+#
+#logging:
+#  level:
+#    com.atguigu: debug
+#    org.springframework: warn
+#
+##阿里云
+#aliyun:
+#  sms:
+#    signName: HIRO
+#    templateCode: SMS_221635519
+#    keyid: LTAI5tPkEaHFP2UWkyZbJ7Wy
+#    keysecret: rkK8p6IIcSKhhdVI1wevyZvB21SoUi

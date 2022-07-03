@@ -1,0 +1,14 @@
+#配置中心地址
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+
+  #  服务模块名称
+  application:
+    name: service-cms
+#  项目环境
+#  profiles:
+#    active: test

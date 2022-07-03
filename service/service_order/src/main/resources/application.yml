@@ -1,0 +1,59 @@
+## 服务端口
+#server:
+#  port: 8007
+#
+#feign:
+#  client:
+#    config:
+#      default:
+#        connect-timeout: 10000
+#        read-timeout: 10000
+#  hystrix:
+#    enabled: true
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 6000
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/guli_edu?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#    username: root
+#    password: root
+#  application:
+#    name: service-order
+#  profiles:
+#    active: dev
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#
+#mybatis-plus:
+##  configuration:
+##    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  mapper-locations: classpath:com/atguigu/eduservice/mapper/xml/*.xml
+#
+#logging:
+#  level:
+#    com.atguigu: debug
+#    org.springframework: warn
+#
+#wx:
+#  pay:
+#    #关联的公众号appid
+#    app_id: wx74862e0dfcf69954
+#    #商户号
+#    partner: 1558950191
+#    #商户key
+#    partnerkey: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+#    #回调地址
+#    notifyurl: http://guli.shop/api/order/weixinPay/weixinNotify
